@@ -78,7 +78,7 @@ body, #container{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     font-family: sans-serif;
     gap:2%;
 }
