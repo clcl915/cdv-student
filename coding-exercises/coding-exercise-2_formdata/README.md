@@ -2,8 +2,12 @@
 
 **wakey/sleepy times**
 
-![wakey](assets/wakeyTimes.png)
-![sleepy](assets/sleepyTimes.png)
+<p align="center">
+<img width="45%" src="assets/wakeyTimesWeekday.png">
+<img width="45%" src="assets/sleepyTimesWeekday.png">
+<img width="45%" src="assets/sleepyTimesWeekend.png">
+<img width="45%" src="assets/wakeyTimesWeekend.png">
+</p>
 
 Wakey/Sleepy Times utilized data from a Google Form and transformed it into JSON format. This data was then visualized with simple HTML, CSS, and vanilla Javascript.
 
