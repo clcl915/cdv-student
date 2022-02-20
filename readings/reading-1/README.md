@@ -5,7 +5,8 @@ The 5 first words that come to you mind when you hear “data”. Also write dow
 
 **data**
 
-|numbers | statistics | graphs/charts | scientists | info |
+|numbers|statistics|graphs/charts|scientists|info|
+|-|-|-|-|-|
 
 **mouse**
 
