@@ -1,19 +1,5 @@
 ## Reading 1 - I Data You, You Data Me (We All Data Together) 
 
-### Part 1
-The 5 first words that come to you mind when you hear “data”. Also write down five words that come to your mind when you hear “mouse”. 
-
-**DATA**
-
-|numbers|statistics|graphs/charts|scientists|info|
-|-|-|-|-|-|
-
-**MOUSE**
-
-|animal | small | press | keyboard | hand |
-|-|-|-|-|-|
-
-### Part 2
 **💡 In your own words, briefly trace the “journey” the word “data” made throughout time. Which words do you think might be its neighbors in the future? Why do you think so?**
 
 Data was a “thing of God.” It was derived from a Latin word that meant something “given”.  But since the 20th century and the era of computers, data’s meaning turned from a thing from God to information on the computer as bits and bytes. I remember that in this article, the author describes data as a thing derived from God but raised by computers. I think the word data is evolving into new states as time goes by. In recent years, the word “big data” is all the buzz for news outlets. If we were to look into the future, data’s neighbors might evolve to consist of words like: ethics, equality, inequality, ml, robots, ai, efficient, simplification, opportunity, etc. 
