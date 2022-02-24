@@ -1,0 +1,127 @@
+[
+    {
+        "time": "2022-02-22T01:09:00.000Z",
+        "where": "鲁班 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "Hurry hurry"
+    },
+    {
+        "time": "2022-02-22T01:34:00.000Z",
+        "where": "浦电路 station convenience store",
+        "withWhom": "Cashier",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 4,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-22T03:14:00.000Z",
+        "where": "Outside of Century Ave station exit 6",
+        "withWhom": "Random Man",
+        "typeOfInteraction": "Directions",
+        "durationInSeconds": 15,
+        "reaction": "I felt bad",
+        "notes": "man asking for directions to 老上海接"
+    },
+    {
+        "time": "2022-02-22T03:20:00.000Z",
+        "where": "Outside of Century Link Mall",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 1,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-22T03:24:00.000Z",
+        "where": "Mall",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Hand outs",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "tried to give me a handout for a promotion at their salon. I said sorry and walked away, but as i was walking she was still talking "
+    },
+    {
+        "time": "2022-02-22T03:26:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-22T03:27:00.000Z",
+        "where": "Gym",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "I needed something",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "I needed a shirt from the towels and attire section"
+    },
+    {
+        "time": "2022-02-22T04:59:00.000Z",
+        "where": "Tim's",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 60,
+        "reaction": "I felt bad",
+        "notes": "ordered hot but wanted iced. turns out that drink only came in hot. so I asked for a cup of ice and 打包"
+    },
+    {
+        "time": "2022-02-22T05:06:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 90,
+        "reaction": "Pleasant",
+        "notes": "nice lady helping me make my food"
+    },
+    {
+        "time": "2022-02-22T10:06:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Receptionist ",
+        "typeOfInteraction": "I needed something",
+        "durationInSeconds": 7,
+        "reaction": "Feeling thankful",
+        "notes": "she thought i forgot my ID card but i was actually asking for a mask because mine got dirty"
+    },
+    {
+        "time": "2022-02-22T10:13:00.000Z",
+        "where": "浦电路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "Hurry hurry",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-23T00:57:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 7,
+        "reaction": "Pleasant",
+        "notes": "simple hi and told me to hurry because class was starting "
+    },
+    {
+        "time": "2022-02-23T02:05:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 3,
+        "reaction": "Hurry hurry",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-23T11:17:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 15,
+        "reaction": "Feeling thankful",
+        "notes": "n/a"
+    }
+]

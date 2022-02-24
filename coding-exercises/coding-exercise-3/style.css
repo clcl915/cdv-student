@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    text-align:center;
+    font-family: Space Mono,monospace;
+  }
+  #viz{
+    border: 1px gray solid;
+    background-color: #D4E687;
+  }
+  
