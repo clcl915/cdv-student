@@ -1,10 +1,30 @@
 body{
     margin: 0;
+    margin-top: 3em;
     text-align:center;
     font-family: Space Mono,monospace;
+  }
+  #content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
   }
   #viz{
     border: 1px gray solid;
     background-color: #D4E687;
   }
-  
+  #howToRead{
+    font-size:10px;
+    text-align:start;
+    gap:2%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #howToRead p{
+    font-weight: bold;
+  }
