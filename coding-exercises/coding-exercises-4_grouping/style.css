@@ -1,0 +1,41 @@
+*{
+  transition: cubic-bezier(.19,1,.22,1) 2s;
+}
+body{
+  width:100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Hubballi', cursive;
+}
+#container{
+  height: 100vh;
+  /* background-color: white; */
+  background-color: #fafafa;
+  color:black;
+  transition: cubic-bezier(.19,1,.22,1) 2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+#vizContainer{
+  /* border: 1px black solid;
+  background-color: #fafafa; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#howToRead{
+  text-align: start;
+  gap:2%;
+  font-size: 12px;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: bold;
+} 

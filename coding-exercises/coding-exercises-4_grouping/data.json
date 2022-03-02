@@ -1,0 +1,247 @@
+[
+    {
+        "district": "Changning",
+        "cafeName": "Akimbo cafe",
+        "cafeSize": "Large",
+        "goodSeatsForWorking": "Meh",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Huangpu",
+        "cafeName": "Cafe On Air",
+        "cafeSize": "Large",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Huangpu",
+        "cafeName": "Lost Bakery",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "Dough"
+    },
+    {
+        "district": "Huangpu",
+        "cafeName": "Marmalade",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "Meh",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Huangpu",
+        "cafeName": "Our Bakery",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "Dough"
+    },
+    {
+        "district": "Huangpu",
+        "cafeName": "前途驿",
+        "cafeSize": "Large",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Huangpu",
+        "cafeName": "周体七日",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "Dough"
+    },
+    {
+        "district": "Huangpu",
+        "cafeName": "津久咖啡",
+        "cafeSize": "Large",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Huangpu",
+        "cafeName": "逗柴",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "Animals"
+    },
+    {
+        "district": "Jingan",
+        "cafeName": "AUNN CAFE & CO",
+        "cafeSize": "Large",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Jingan",
+        "cafeName": "BOBAC",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Jingan",
+        "cafeName": "CoffeeGroupies",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Jingan",
+        "cafeName": "common ground",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "Meh",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Jingan",
+        "cafeName": "dia coffee",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Jingan",
+        "cafeName": "Sumerian ",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "BAGELS!"
+    },
+    {
+        "district": "Jingan",
+        "cafeName": "Tequila Espresso",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Jingan",
+        "cafeName": "Hefa Coffee",
+        "cafeSize": "Tiny",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Pudong",
+        "cafeName": "Blatage Coffee",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Pudong",
+        "cafeName": "Drops",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Pudong",
+        "cafeName": "fumi coffee",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Pudong",
+        "cafeName": "Geographer",
+        "cafeSize": "Large",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Pudong",
+        "cafeName": "GREYBOX COFFEE",
+        "cafeSize": "Large",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Putuo",
+        "cafeName": "HANA COFFEE",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "25 COFFEE LAB",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "56 rye de Yongkang",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "Cakes"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "ALPHA SEEDS COFFEE",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "Coffee boat",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "Animals"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "EÀU Cafe",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Meh",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "HINICHIJOU",
+        "cafeSize": "Tiny",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "Paw"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "In Dough We Trust",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "Cakes"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "O.P.S. Cafe",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "WAC. 巧合",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "日常",
+        "cafeSize": "Medium",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "聚福Shanghailander",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "Yes",
+        "anythingSpecial": "N/A"
+    },
+    {
+        "district": "Xuhui",
+        "cafeName": "面包咖啡好天气",
+        "cafeSize": "Small",
+        "goodSeatsForWorking": "No",
+        "anythingSpecial": "N/A"
+    }
+]
