@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Back - interactions with strangers whose names I don't know</title>
-    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/back-style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/back-style.css" />
     <!-- Please leave this following line here -->
     <script type="text/javascript" src="setup/setup.js"></script>
-    
+
     <!-- include the d3 library -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    
   </head>
   <body>
     <div id="container">
-      <div class="info">
+        <div id="vizContainer"></div>
+      <!-- <div class="info">
         <buttton id="infoButton">i</buttton>
         <div id="infoContent">
           <h4>interactions with strangers <br> whose names I don't know</h4>
@@ -22,15 +25,15 @@
             <p><small>KEY</small></p>
             <div><p>size of leaf-> duration in seconds</p></div>
             <div>
-              <p>inner leaf style -> reaction to interaction</p>
-              <!-- <small><ul>
+              <p>inner leaf style -> reaction to interaction</p> -->
+      <!-- <small><ul>
                   <li>no border -> no particular reaction</li>
                   <li>dashed border -> pleasant</li>
                   <li>dotted border -> I felt bad</li>
                   <li>thin border-> hurry hurry</li>
                   <li>thick border -> feeling thankful</li>
                 </ul></small> -->
-              <!-- <div id="keyHelp">
+      <!-- <div id="keyHelp">
                 <svg>
                   <g x="-50" y="-100">
                     <path fill="white" transform="scale(1)" stroke-weight='2' class="cls-1" d="M19.25-53.5v-2.3C16.16-56.37,4.41-50.26.74-47.08v-3.33H-.74v3.33c-3.67-3.18-15.42-9.2-18.51-8.63v2.3C-16.16-54-4.41-48-.74-44.79v2C-4.41-46-16.16-52-19.25-51.44v2.2c3.09-.57,14.84,5.44,18.51,8.62v2.09c-3.67-3.19-15.42-9.2-18.51-8.63v2.42c3.09-.57,14.84,5.44,18.51,8.63v2c-3.67-3.18-15.42-9.19-18.51-8.63v2.26C-16.16-41.06-4.41-35-.74-31.86v1.5C-4.41-33.54-16.16-39.55-19.25-39v2c3.09-.57,14.84,5.45,18.51,8.63v1.74c-3.67-3.18-15.42-9.19-18.51-8.62v1.82C-16.16-34-4.41-28-.74-24.81V-23c-3.67-3.19-15.42-9.2-18.51-8.63v1.86c3.09-.57,14.84,5.45,18.51,8.63v2.24c-3.67-3.18-15.42-9.19-18.51-8.62v1.82c3.09-.57,14.84,5.44,18.51,8.62v1.92c-3.67-3.19-15.42-8.71-18.51-8.15v1.72c3.09-.57,14.84,5.44,18.51,8.63v2.14C-4.41-14-16.16-20-19.25-19.42v1.72c3.09-.57,14.84,5.44,18.51,8.62V0H.74V-9.08c3.67-3.18,15.42-9.28,18.51-8.71v-1.72C16.16-20.08,4.41-14,.74-10.8v-2.14c3.67-3.19,15.42-9.29,18.51-8.72v-1.72C16.16-23.94,4.41-17.84.74-14.66v-2.4c3.67-3.18,15.42-9.28,18.51-8.71v-1.82C16.16-28.16,4.41-22.06.74-18.88v-2.24c3.67-3.18,15.42-9.29,18.51-8.72V-31.7C16.16-32.27,4.41-26.17.74-23v-1.83C4.41-28,16.16-34.09,19.25-33.53v-1.81C16.16-35.91,4.41-29.81.74-26.63v-1.74c3.67-3.18,15.42-9.29,18.51-8.72v-2C16.16-39.64,4.41-33.54.74-30.36v-1.5C4.41-35,16.16-41.15,19.25-40.58v-2.26C16.16-43.4,4.41-37.3.74-34.12v-2c3.67-3.19,15.42-9.29,18.51-8.72v-2.42C16.16-47.82,4.41-41.72.74-38.53v-2.09c3.67-3.18,15.42-9.28,18.51-8.71v-2.2C16.16-52.1,4.41-46,.74-42.82v-2C4.41-48,16.16-54.07,19.25-53.5Z"/>
@@ -38,10 +41,10 @@
                   </svg>
                 <p>hurry hurry</p>
               </div> -->
-            </div>
+      <!-- </div>
             <div>
-              <p>fill color -> type to interaction</p>
-              <!-- <small
+              <p>fill color -> type to interaction</p> -->
+      <!-- <small
                 ><ul>
                   <li>lightgreen -> Deliveries</li>
                   <li>white -> Health Code</li>
@@ -52,16 +55,14 @@
                   <li>lightpink -> Directions </li>
                 </ul></small
               > -->
-            </div>
+      <!-- </div>
             <div>leaf shape -> with whom</div>
           </div>
         </div>
 
-      </div>
-      <div>
-      <div id="vizContainer"></div>
-      </div>
+      </div> -->
+
     </div>
-    <script type="text/javascript" src="js/back-script.js"></script>
+    <script type="text/javascript" src="js/back-script.js" ></script>
   </body>
 </html>

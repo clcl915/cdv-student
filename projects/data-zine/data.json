@@ -1,0 +1,631 @@
+[
+    {
+        "time": "2022-02-22T01:09:00.000Z",
+        "where": "鲁班 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "Hurry hurry"
+    },
+    {
+        "time": "2022-02-22T01:34:00.000Z",
+        "where": "浦电路 station convenience store",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 4,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-22T03:14:00.000Z",
+        "where": "Outside of Century Ave station exit 6",
+        "withWhom": "Random Person",
+        "typeOfInteraction": "Directions",
+        "durationInSeconds": 15,
+        "reaction": "I felt bad",
+        "notes": "man asking for directions to 老上海接"
+    },
+    {
+        "time": "2022-02-22T03:20:00.000Z",
+        "where": "Outside of Century Link Mall",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 1,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-22T03:24:00.000Z",
+        "where": "Mall",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Hand outs",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "tried to give me a handout for a promotion at their salon. I said sorry and walked away, but as i was walking she was still talking "
+    },
+    {
+        "time": "2022-02-22T03:26:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-22T03:27:00.000Z",
+        "where": "Gym",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "I needed something",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "I needed a shirt from the towels and attire section"
+    },
+    {
+        "time": "2022-02-22T04:59:00.000Z",
+        "where": "Tim's",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 60,
+        "reaction": "I felt bad",
+        "notes": "ordered hot but wanted iced. turns out that drink only came in hot. so I asked for a cup of ice and 打包"
+    },
+    {
+        "time": "2022-02-22T05:06:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 90,
+        "reaction": "Pleasant",
+        "notes": "nice lady helping me make my food"
+    },
+    {
+        "time": "2022-02-22T10:06:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "I needed something",
+        "durationInSeconds": 7,
+        "reaction": "Feeling thankful",
+        "notes": "she thought i forgot my ID card but i was actually asking for a mask because mine got dirty"
+    },
+    {
+        "time": "2022-02-22T10:13:00.000Z",
+        "where": "浦电路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "Hurry hurry",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-23T00:57:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 7,
+        "reaction": "Pleasant",
+        "notes": "simple hi and told me to hurry because class was starting "
+    },
+    {
+        "time": "2022-02-23T02:05:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 3,
+        "reaction": "Hurry hurry",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-23T11:17:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 15,
+        "reaction": "Feeling thankful",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-25T06:23:00.000Z",
+        "where": "鲁班 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 10,
+        "reaction": "Hurry hurry",
+        "notes": "old lady with huge bag was holding up the line"
+    },
+    {
+        "time": "2022-02-24T01:13:00.000Z",
+        "where": "Didi Driver",
+        "withWhom": "Driver",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 7,
+        "reaction": "Hurry hurry",
+        "notes": "hurry hurry !!! i'm going to be late !"
+    },
+    {
+        "time": "2022-02-24T04:32:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 23,
+        "reaction": "Huh?",
+        "notes": "where are you sir? lunch was good 芝+哥"
+    },
+    {
+        "time": "2022-02-24T05:11:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 19,
+        "reaction": "Huh?",
+        "notes": "where are you sir? coffeeee tims"
+    },
+    {
+        "time": "2022-02-24T10:17:00.000Z",
+        "where": "浦电路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "Hurry hurry",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-24T11:24:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 59,
+        "reaction": "Huh?",
+        "notes": "couldn't really hear what he was saying over the phone"
+    },
+    {
+        "time": "2022-02-24T12:28:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 29,
+        "reaction": "Huh?",
+        "notes": "missed his first phone call and couldn't find my delivery on the 1st floor"
+    },
+    {
+        "time": "2022-02-25T09:21:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "I needed something",
+        "durationInSeconds": 13,
+        "reaction": "Feeling thankful",
+        "notes": "i needed a mask again. receptionist had the the security guard get me one from the front"
+    },
+    {
+        "time": "2022-02-25T09:30:00.000Z",
+        "where": "Century Ave station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "Hurry hurry",
+        "notes": "n/a"
+    },
+    {
+        "time": "2020-02-25T10:20:00.000Z",
+        "where": "People's Square station",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "Hurry hurry",
+        "notes": "n/a"
+    },
+    {
+        "time": "2020-02-25T11:00:00.000Z",
+        "where": "Me & Joe",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 5,
+        "reaction": "Feeling thankful",
+        "notes": "pasta !!!!"
+    },
+    {
+        "time": "2022-02-26T03:43:00.000Z",
+        "where": "Golf Range",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 10,
+        "reaction": "Pleasant",
+        "notes": "food to our area. which one is whos"
+    },
+    {
+        "time": "2022-02-26T05:52:00.000Z",
+        "where": "Golf Range",
+        "withWhom": "Random Person",
+        "typeOfInteraction": "They needed something",
+        "durationInSeconds": 15,
+        "reaction": "Annoyed",
+        "notes": "annoying woman that was very annoying kept asking if we were going to keep playing "
+    },
+    {
+        "time": "2022-02-26T12:15:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 11,
+        "reaction": "No particular reaction",
+        "notes": "dumplings "
+    },
+    {
+        "time": "2022-02-26T12:23:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 20,
+        "reaction": "No particular reaction",
+        "notes": "water and snacks"
+    },
+    {
+        "time": "2022-02-27T05:45:00.000Z",
+        "where": "Cafe",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 35,
+        "reaction": "Errrrrrr",
+        "notes": "couldn't decide what to order "
+    },
+    {
+        "time": "2022-02-27T06:32:00.000Z",
+        "where": "Cafe",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "I needed something",
+        "durationInSeconds": 12,
+        "reaction": "Feeling thankful",
+        "notes": "needed water and he gave me ice water ! "
+    },
+    {
+        "time": "2022-02-27T11:32:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 60,
+        "reaction": "No particular reaction",
+        "notes": "told him to put it in the elevator instead of the front desk"
+    },
+    {
+        "time": "2022-02-28T01:52:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 15,
+        "reaction": "Annoyed",
+        "notes": "woke me up with his phone call"
+    },
+    {
+        "time": "2022-02-28T06:24:00.000Z",
+        "where": "鲁班路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-28T06:45:00.000Z",
+        "where": "浦电路 station convenience store",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 6,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-02-28T08:56:00.000Z",
+        "where": "浦电路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-03-01T01:11:00.000Z",
+        "where": "鲁班路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-03-01T03:30:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-03-01T04:57:00.000Z",
+        "where": "Gym",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 2,
+        "reaction": "Feeling thankful",
+        "notes": "first time calling lunch to my gym. felt thankful for my delivery guy to come all the way up to the 4th floor. "
+    },
+    {
+        "time": "2022-03-01T05:19:00.000Z",
+        "where": "Tim's",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 9,
+        "reaction": "Hurry hurry",
+        "notes": "gotta go to class"
+    },
+    {
+        "time": "2022-03-01T10:16:00.000Z",
+        "where": "浦电路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-03-03T01:18:00.000Z",
+        "where": "鲁班路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "Hurry hurry",
+        "notes": "gonna be so late!!!!!"
+    },
+    {
+        "time": "2022-03-03T04:26:00.000Z",
+        "where": "Texas Roadhouse ",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 15,
+        "reaction": "Feeling thankful",
+        "notes": "spoke english! very nice guy "
+    },
+    {
+        "time": "2022-03-03T04:52:00.000Z",
+        "where": "Texas Roadhouse ",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 1,
+        "reaction": "Feeling thankful",
+        "notes": "bye! to staff workers"
+    },
+    {
+        "time": "2022-03-03T05:37:00.000Z",
+        "where": "Daiso",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 25,
+        "reaction": "Pleasant",
+        "notes": "purchased nail clipper and asked her to help me throw away the packaging"
+    },
+    {
+        "time": "2022-03-03T05:41:00.000Z",
+        "where": "Tim's",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "picking up shirley's coffee"
+    },
+    {
+        "time": "2022-03-03T05:41:00.000Z",
+        "where": "Manner Coffee",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 8,
+        "reaction": "No particular reaction",
+        "notes": "picking up my coffee"
+    },
+    {
+        "time": "2022-03-03T10:22:00.000Z",
+        "where": "Exhibition",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "I needed something",
+        "durationInSeconds": 50,
+        "reaction": "Pleasant",
+        "notes": "asked one of the exhibition staff to elaborate on a piece"
+    },
+    {
+        "time": "2022-03-03T13:18:00.000Z",
+        "where": "Uniqlo",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "I needed something",
+        "durationInSeconds": 45,
+        "reaction": "Pleasant",
+        "notes": "I saw a shirt I liked on Taobao and asked a lady if these 2 were the same. She was really sweet and showed me where it actually was"
+    },
+    {
+        "time": "2022-03-03T13:33:00.000Z",
+        "where": "Uniqlo",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 180,
+        "reaction": "Errrrrrr",
+        "notes": "wanted to ask them to steam my buttonup for me but I forgot the word for steam so it took a while til she figured out what I wanted to say"
+    },
+    {
+        "time": "2022-03-04T04:32:00.000Z",
+        "where": "Didi Driver",
+        "withWhom": "Driver",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 5,
+        "reaction": "No particular reaction",
+        "notes": "this didi driver really said room room "
+    },
+    {
+        "time": "2022-03-04T05:27:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 15,
+        "reaction": "Hahaha",
+        "notes": "Photo taking day! Staff worker at diploma photo room asked for my id. For some reason, I'm always Candy not Cindy"
+    },
+    {
+        "time": "2022-03-04T05:29:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 60,
+        "reaction": "Annoyed",
+        "notes": "Very annoyed with how mean the photographer was"
+    },
+    {
+        "time": "2022-03-04T05:46:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 90,
+        "reaction": "Pleasant",
+        "notes": "The senior photos guy was very nice! so friendly"
+    },
+    {
+        "time": "2022-03-04T06:08:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 90,
+        "reaction": "Pleasant",
+        "notes": "This guy was very too nice! friendly"
+    },
+    {
+        "time": "2022-03-04T07:23:00.000Z",
+        "where": "NYUSH",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 72,
+        "reaction": "Annoyed",
+        "notes": "So annoyed at this elema driver. Doesn't pick up my food, is late, and doesn't pick up the phone. "
+    },
+    {
+        "time": "2022-03-05T10:48:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 18,
+        "reaction": "No particular reaction",
+        "notes": "hema for my soy chicken rice"
+    },
+    {
+        "time": "2022-03-06T08:30:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 23,
+        "reaction": "No particular reaction",
+        "notes": "elema for my xicha"
+    },
+    {
+        "time": "2022-03-06T12:50:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 19,
+        "reaction": "No particular reaction",
+        "notes": "elema for my chicken wings"
+    },
+    {
+        "time": "2022-03-07T07:57:00.000Z",
+        "where": "Home",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 20,
+        "reaction": "Pleasant",
+        "notes": "carino staff called to ask if I wanted my baguette cut into slices"
+    },
+    {
+        "time": "2022-03-07T08:14:00.000Z",
+        "where": "Home",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 11,
+        "reaction": "No particular reaction",
+        "notes": "delivering my carino "
+    },
+    {
+        "time": "2022-03-08T01:14:00.000Z",
+        "where": "浦电路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-03-08T01:30:00.000Z",
+        "where": "浦电路 station convenience store",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 7,
+        "reaction": "Pleasant",
+        "notes": "told me that if i scanned a QR code I can get a free apple for women's day"
+    },
+    {
+        "time": "2022-03-08T03:21:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 4,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-03-08T05:06:00.000Z",
+        "where": "Gym",
+        "withWhom": "Delivery Driver",
+        "typeOfInteraction": "Deliveries",
+        "durationInSeconds": 12,
+        "reaction": "No particular reaction",
+        "notes": "dropping off my salad at pure"
+    },
+    {
+        "time": "2022-03-08T05:07:00.000Z",
+        "where": "Gym",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 5,
+        "reaction": "Errrrrrr",
+        "notes": "receptionist told me that eating food is on the outside couches. i don't know why but the why he said he kinda felt weird"
+    },
+    {
+        "time": "2022-03-08T05:32:00.000Z",
+        "where": "Tim's",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Purchase",
+        "durationInSeconds": 10,
+        "reaction": "Feeling thankful",
+        "notes": "asked to 打包 and the lady was nice and the bags were pink and flowery because of women's day"
+    },
+    {
+        "time": "2022-03-08T10:15:00.000Z",
+        "where": "浦电路 station ",
+        "withWhom": "Security Guard",
+        "typeOfInteraction": "Security Check",
+        "durationInSeconds": 1,
+        "reaction": "No particular reaction",
+        "notes": "n/a"
+    },
+    {
+        "time": "2022-03-09T02:57:00.000Z",
+        "where": "Clinic",
+        "withWhom": "Staff worker",
+        "typeOfInteraction": "Health Code",
+        "durationInSeconds": 15,
+        "reaction": "Pleasant",
+        "notes": "show health code and trip code and fill out a form"
+    },
+    {
+        "time": "2022-03-09T04:28:00.000Z",
+        "where": "Clinic",
+        "withWhom": "Receptionist",
+        "typeOfInteraction": "Confirmation",
+        "durationInSeconds": 60,
+        "reaction": "Errrrrrr",
+        "notes": "GOP complication. made me nervous that I was going to pay for my checkup"
+    }
+]
