@@ -1,0 +1,11 @@
+*{
+    transition: cubic-bezier(.19,1,.22,1) 2s;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Hubballi", cursive;
+  }
