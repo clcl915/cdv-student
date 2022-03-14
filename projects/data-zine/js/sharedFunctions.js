@@ -48,19 +48,19 @@ function getColor(d,i){
             color="#f3b0c3";
             break;
         case "Security Check":
-            color="#fbe551";
+            color="#68b6ef";
             break;
         case "Hand outs":
-            color="#cbaacb";
+            color="#7f65ce";
             break;
         case "They needed something":
-            color="#ffc8a2";
+            color="#af777e";
             break;
         case "Directions":
-            color="#adb5be";
+            color="#cfb6cf";
             break;
         case "Confirmation":
-            color="#b1907f";
+            color="#ffeeba";
             break;
     }
     return color;

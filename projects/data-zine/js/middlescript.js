@@ -17,6 +17,7 @@ function transformData(dataToBeTransformed){
     })
     console.log(groupedData)
     let normalArrayVersion = Array.from(groupedData);
+    console.log("normalArrayV",normalArrayVersion);
     return normalArrayVersion
 
 }
@@ -51,6 +52,9 @@ function gotData(incomingData){
     console.log("the incoming data is:" , incomingData);
     let transformedData = transformData(incomingData);
     console.log("transformedData", transformedData)
+    transformedData = transformedData.sort((x,y)=>{
+        return d3.descending(x[1].length,y[1].length)
+    });
     let maxDuration = d3.max(incomingData, (d,i)=>{return d.durationInSeconds;}); 
     // console.log("maxD",maxDuration);
     let scaleFactor = d3.scaleLinear().domain([0,maxDuration]).range([0.7,3]);
@@ -79,30 +83,30 @@ function gotData(incomingData){
                     })
                     .attr("fill","transparent")
                     .attr("d",(d,i)=>{
-                        if (i != transformedData.length-1){
-                            if (i%2 == 0){
-                                if (i>0){
-                                    var points = createPosPoints(10*(i),[0,1400],0.5);
-                                }
-                                else{
-                                    var points = createPosPoints(10,[0,1400],0.5);
-                                }
-                                return "M"+points.slice(0,Math.max(1,points.length|0)).join("L");
+                        if (i%2 == 0){
+                            if (i>0){
+                                var points = createPosPoints(10*(i),[0,1400],0.5);
                             }
                             else{
-                                if (i!=1){
-                                    var points = createNegPoints(10*(i-1),[-1400,0],0.5);
-                                }
-                                else{
-                                    var points = createNegPoints(10,[-1400,0],0.5);
-                                }
-                                return "M"+points.slice(0,Math.max(1,points.length|0)).join("L");
+                                var points = createPosPoints(10,[0,1400],0.5);
                             }
-                        }
-                        else{
-                            var points = createStraightLine([0,1400],0.5);
                             return "M"+points.slice(0,Math.max(1,points.length|0)).join("L");
                         }
+                        else{
+                            if (i!=1){
+                                var points = createNegPoints(10*(i-1),[-1400,0],0.5);
+                            }
+                            else{
+                                var points = createNegPoints(10,[-1400,0],0.5);
+                            }
+                            return "M"+points.slice(0,Math.max(1,points.length|0)).join("L");
+                        }
+                        // before change to data
+                        // if (i != transformedData.length-1){}
+                        // else{
+                        //     var points = createStraightLine([0,1400],0.5);
+                        //     return "M"+points.slice(0,Math.max(1,points.length|0)).join("L");
+                        // }
                     })
     ;
     let leaves = branchGroup.selectAll(".branchleaf").data(getTypeData).enter().append("path")
@@ -118,47 +122,46 @@ function gotData(incomingData){
                 let scaleF = scaleFactor(d.durationInSeconds);
                 let parentIndex= Array.prototype.indexOf.call(d3.select(j[i]).node().parentNode.parentNode.children, d3.select(j[i]).node().parentNode);
                 let x,y,rotateFactor;
-                if (parentIndex != transformedData.length-1){
-                    if (parentIndex%2 == 0){
-                        x=((i+1)* 75);
-                        let xSqrt = Math.sqrt(x);
-                        // console.log(xSqrt);
-                        if (parentIndex!=0){
-                            y=(10*parentIndex)*xSqrt;
-                            rotateFactor = 10+5*parentIndex;
-                        }
-                        else{
-                            // y=10*xSqrt-3;
-                            y= (i%2==0) ? 10*xSqrt+0.5:10*xSqrt-1; 
-                            rotateFactor= (i%2==0) ? -10:45; 
-                        }
-                        // scaleF = (i%2==0) ? -0.9:0.9; 
-                        scaleF = (i%2==0) ? -scaleF : scaleF; 
-                        // console.log(x,y,scaleF,rotateFactor);
+                if (parentIndex%2 == 0){
+                    x=((i+1)*(70-parentIndex*5));
+                    let xSqrt = Math.sqrt(x);
+                    // console.log(xSqrt);
+                    if (parentIndex!=0){
+                        y=(10*parentIndex)*xSqrt;
+                        rotateFactor = 10+5*parentIndex;
                     }
                     else{
-                        x=-((i+1)* 75);
-                        // console.log(x)
-                        let xSqrt = Math.sqrt(Math.abs(x));
-                        if (parentIndex!=1){
-                            y=(10*(parentIndex-1))*xSqrt;
-                            rotateFactor = -10-5*parentIndex;
-                        }
-                        else{
-                            y= (i%2==0) ? 10*xSqrt+1:10*xSqrt-1; 
-                            rotateFactor= (i%2==0) ? 10:-45; 
-                        }
-                        // scaleF = (i%2==0) ? -0.9:0.9; 
-                        scaleF = (i%2==0) ? -scaleF : scaleF; 
-                        // console.log(x,y,scaleF,rotateFactor);
+                        // y=10*xSqrt-3;
+                        y= (i%2==0) ? 10*xSqrt+0.5:10*xSqrt-1; 
+                        rotateFactor= (i%2==0) ? -10:30; 
                     }
+                    // scaleF = (i%2==0) ? -0.9:0.9; 
+                    scaleF = (i%2==0) ? -scaleF : scaleF; 
+                    // console.log(x,y,scaleF,rotateFactor);
                 }
                 else{
-                    x=0;
-                    y=600+i*100;
-                    rotateFactor= (i%2==0) ? -70:70; 
+                    x=-((i+1)* (70-(parentIndex-1)*5));
+                    // console.log(x)
+                    let xSqrt = Math.sqrt(Math.abs(x));
+                    if (parentIndex!=1){
+                        y=(10*(parentIndex-1))*xSqrt;
+                        rotateFactor = -10-5*parentIndex;
+                    }
+                    else{
+                        y= (i%2==0) ? 10*xSqrt+1:10*xSqrt-1; 
+                        rotateFactor= (i%2==0) ? 10:-30; 
+                    }
+                    // scaleF = (i%2==0) ? -0.9:0.9; 
                     scaleF = (i%2==0) ? -scaleF : scaleF; 
+                    // console.log(x,y,scaleF,rotateFactor);
                 }
+                // if (parentIndex != transformedData.length-1){}
+                // else{
+                //     x=0;
+                //     y=600+i*100;
+                //     rotateFactor= (i%2==0) ? -70:70; 
+                //     scaleF = (i%2==0) ? -scaleF : scaleF; 
+                // }
                 return "translate(" +  x + "," + y + ") scale(" + scaleF + ") rotate(" + rotateFactor+")";
 
             })
@@ -178,47 +181,46 @@ function gotData(incomingData){
             // console.log(d.durationInSeconds,scaleF)
             let parentIndex= Array.prototype.indexOf.call(d3.select(j[i]).node().parentNode.parentNode.children, d3.select(j[i]).node().parentNode);
             let x,y,rotateFactor,flipX;
-            if (parentIndex != transformedData.length-1){
-                if (parentIndex%2 == 0){
-                    x=((i+1)* 75);
-                    let xSqrt = Math.sqrt(x);
-                    // console.log(xSqrt);
-                    if (parentIndex!=0){
-                        y=(10*parentIndex)*xSqrt;
-                        rotateFactor = 10+5*parentIndex;
-                    }
-                    else{
-                        // y=10*xSqrt-3;
-                        y= (i%2==0) ? 10*xSqrt+2:10*xSqrt-2; 
-                        rotateFactor= (i%2==0) ? -10:45; 
-                    }
-                    scaleF = (i%2==0) ? -scaleF : scaleF; 
-                    // flipX = (i%2==0) ? '' : "scale(1,-1)"; 
-                    // console.log(x,y,rotateFactor,"evenodd",scaleF);
+            if (parentIndex%2 == 0){
+                x=((i+1)* (70-parentIndex*5));
+                let xSqrt = Math.sqrt(x);
+                // console.log(xSqrt);
+                if (parentIndex!=0){
+                    y=(10*parentIndex)*xSqrt;
+                    rotateFactor = 10+5*parentIndex;
                 }
                 else{
-                    x=-((i+1)* 75);
-                    // console.log(x)
-                    let xSqrt = Math.sqrt(Math.abs(x));
-                    if (parentIndex!=1){
-                        y=(10*(parentIndex-1))*xSqrt;
-                        rotateFactor = -10-5*parentIndex;
-                    }
-                    else{
-                        y= (i%2==0) ? 10*xSqrt+2:10*xSqrt-2; 
-                        rotateFactor= (i%2==0) ? 10:-45; 
-                    }
-                    scaleF = (i%2==0) ?-scaleF:scaleF; 
-                    // flipX = (i%2==0) ? "" : "scale(1,-1)"; 
-                    // console.log(x,y,rotateFactor,"evenodd",scaleF);
+                    // y=10*xSqrt-3;
+                    y= (i%2==0) ? 10*xSqrt+2:10*xSqrt-2; 
+                    rotateFactor= (i%2==0) ? -10:30; 
                 }
+                scaleF = (i%2==0) ? -scaleF : scaleF; 
+                // flipX = (i%2==0) ? '' : "scale(1,-1)"; 
+                // console.log(x,y,rotateFactor,"evenodd",scaleF);
             }
             else{
-                x=0;
-                y=600+i*100;
-                rotateFactor= (i%2==0) ? -70:70; 
-                scaleF = (i%2==0) ? -scaleF : scaleF; 
+                x=-((i+1)*(70-(parentIndex-1)*5));
+                // console.log(x)
+                let xSqrt = Math.sqrt(Math.abs(x));
+                if (parentIndex!=1){
+                    y=(10*(parentIndex-1))*xSqrt;
+                    rotateFactor = -10-5*parentIndex;
+                }
+                else{
+                    y= (i%2==0) ? 10*xSqrt+2:10*xSqrt-2; 
+                    rotateFactor= (i%2==0) ? 10:-30; 
+                }
+                scaleF = (i%2==0) ?-scaleF:scaleF; 
+                // flipX = (i%2==0) ? "" : "scale(1,-1)"; 
+                // console.log(x,y,rotateFactor,"evenodd",scaleF);
             }
+            // if (parentIndex != transformedData.length-1){}
+            // else{
+            //     x=0;
+            //     y=600+i*100;
+            //     rotateFactor= (i%2==0) ? -70:70; 
+            //     scaleF = (i%2==0) ? -scaleF : scaleF; 
+            // }
             return "translate(" +  x + "," + y + ")" + " scale("+scaleF+") rotate("+rotateFactor+")"
 
         })
