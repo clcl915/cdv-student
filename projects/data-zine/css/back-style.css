@@ -10,12 +10,11 @@ body{
   font-family: 'Hubballi', cursive;
 }
 #container{
-  height: 100vh;
+  /* width: 100vw; */
   background-color: #07573a;
   color:white;
   /* background-color: #5e5e5e;
   color:white; */
-
   transition: cubic-bezier(.19,1,.22,1) 2s;
   display: flex;
   flex-direction: row;
@@ -24,8 +23,6 @@ body{
   gap: 1%;
 }
 #vizContainer{
-  height: calc(100vh - 100px); 
-  width: calc(70vw - 100px);
   /* border: 1px black solid;
   background-color: #fafafa; */
   display: flex;

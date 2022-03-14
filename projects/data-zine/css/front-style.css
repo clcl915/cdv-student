@@ -10,7 +10,7 @@ body {
   font-family: "Hubballi", cursive;
 }
 #container {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #07573a;
   color: white;
   /* background-color: #5e5e5e;

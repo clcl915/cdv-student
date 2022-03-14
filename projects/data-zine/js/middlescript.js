@@ -1,4 +1,4 @@
-import { getColor, getPath } from './back-script.js';
+// import { getColor, getPath } from './back-script.js';
 // console.log( getColor() );
 let w = 2400; //front back 1200
 let h = 800;
@@ -51,6 +51,10 @@ function gotData(incomingData){
     console.log("the incoming data is:" , incomingData);
     let transformedData = transformData(incomingData);
     console.log("transformedData", transformedData)
+    let maxDuration = d3.max(incomingData, (d,i)=>{return d.durationInSeconds;}); 
+    // console.log("maxD",maxDuration);
+    let scaleFactor = d3.scaleLinear().domain([0,maxDuration]).range([0.7,3]);
+
     let base = viz.append("g")
         .attr("transform","translate(" + w/2+","+ h+")")
         .attr("x",w/2)
@@ -60,15 +64,21 @@ function gotData(incomingData){
             .append("g")
             .attr("class","branchGroup")
             // .attr("transform","translate(0,100) scale(1,-1)")
-            .attr("transform","scale(1,-1)")
+            .attr("transform",(d,i)=>{
+                let translateLR=[50,-50,30,-30,20,-20,10,-10,0];
+                return "translate("+translateLR[i]+",0) scale(1,-1)"
+            })
     ;
     let branches = branchGroup.append("path")
                     .attr("class","branches")
-                    .attr("stroke-width","5")
-                    .attr("stroke","white")
+                    .attr("stroke-width","3")
+                    // .attr("stroke","#f1fff7")
+                    .attr("stroke",(d,i)=>{
+                        console.log(d[1]);
+                        return getColor(d[1][0]);
+                    })
                     .attr("fill","transparent")
                     .attr("d",(d,i)=>{
-                        console.log(i)
                         if (i != transformedData.length-1){
                             if (i%2 == 0){
                                 if (i>0){
@@ -77,7 +87,6 @@ function gotData(incomingData){
                                 else{
                                     var points = createPosPoints(10,[0,1400],0.5);
                                 }
-                                console.log("even", 14*(i+1))
                                 return "M"+points.slice(0,Math.max(1,points.length|0)).join("L");
                             }
                             else{
@@ -87,7 +96,6 @@ function gotData(incomingData){
                                 else{
                                     var points = createNegPoints(10,[-1400,0],0.5);
                                 }
-                                console.log("odd", 14*(i))
                                 return "M"+points.slice(0,Math.max(1,points.length|0)).join("L");
                             }
                         }
@@ -97,9 +105,9 @@ function gotData(incomingData){
                         }
                     })
     ;
-    branchGroup.selectAll(".branchleaf").data(getTypeData).enter().append("path")
+    let leaves = branchGroup.selectAll(".branchleaf").data(getTypeData).enter().append("path")
             .attr("class","branchleaf")
-            .attr("stroke-width","1")
+            .attr("stroke-width","2")
             .attr("stroke",(d,i)=>{
                 return getColor(d);
             })
@@ -107,53 +115,114 @@ function gotData(incomingData){
                 return getColor(d);
             })
             .attr("transform", (d,i,j)=>{
-                // console.log(j)
+                let scaleF = scaleFactor(d.durationInSeconds);
                 let parentIndex= Array.prototype.indexOf.call(d3.select(j[i]).node().parentNode.parentNode.children, d3.select(j[i]).node().parentNode);
-                let x,y,scaleFactor,rotateFactor;
+                let x,y,rotateFactor;
                 if (parentIndex != transformedData.length-1){
                     if (parentIndex%2 == 0){
                         x=((i+1)* 75);
                         let xSqrt = Math.sqrt(x);
-                        console.log(xSqrt);
+                        // console.log(xSqrt);
                         if (parentIndex!=0){
                             y=(10*parentIndex)*xSqrt;
                             rotateFactor = 10+5*parentIndex;
                         }
                         else{
                             // y=10*xSqrt-3;
-                            y= (i%2==0) ? 10*xSqrt+2:10*xSqrt-2; 
-                            rotateFactor= (i%2==0) ? -15:45; 
+                            y= (i%2==0) ? 10*xSqrt+0.5:10*xSqrt-1; 
+                            rotateFactor= (i%2==0) ? -10:45; 
                         }
-                        scaleFactor = (i%2==0) ? -0.9:0.9; 
+                        // scaleF = (i%2==0) ? -0.9:0.9; 
+                        scaleF = (i%2==0) ? -scaleF : scaleF; 
+                        // console.log(x,y,scaleF,rotateFactor);
                     }
                     else{
                         x=-((i+1)* 75);
-                        console.log(x)
+                        // console.log(x)
                         let xSqrt = Math.sqrt(Math.abs(x));
                         if (parentIndex!=1){
                             y=(10*(parentIndex-1))*xSqrt;
                             rotateFactor = -10-5*parentIndex;
                         }
                         else{
-                            y= (i%2==0) ? 10*xSqrt+2:10*xSqrt-2; 
-                            rotateFactor= (i%2==0) ? 15:-45; 
+                            y= (i%2==0) ? 10*xSqrt+1:10*xSqrt-1; 
+                            rotateFactor= (i%2==0) ? 10:-45; 
                         }
-                        scaleFactor = (i%2==0) ? -0.9:0.9; 
+                        // scaleF = (i%2==0) ? -0.9:0.9; 
+                        scaleF = (i%2==0) ? -scaleF : scaleF; 
+                        // console.log(x,y,scaleF,rotateFactor);
                     }
                 }
-                return "translate(" +  x + "," + y + ") scale("+scaleFactor+") rotate("+rotateFactor+")"
+                else{
+                    x=0;
+                    y=600+i*100;
+                    rotateFactor= (i%2==0) ? -70:70; 
+                    scaleF = (i%2==0) ? -scaleF : scaleF; 
+                }
+                return "translate(" +  x + "," + y + ") scale(" + scaleF + ") rotate(" + rotateFactor+")";
 
             })
             .attr("d",(d,i)=>{
-                // return "M0,0 C-15,-1 -15,-49 0,-50 C15,-49 15,-1 0,0"
-                //  if (i >= leafPaths.length){
-                //     return leafPaths[i - leafPaths.length];
-                // }
-                // else{
-                //     return leafPaths[i];
-                // }
                 return getPath(d);
             })
     ;
+    let innerleaves = branchGroup.selectAll(".innerleaves").data(getTypeData).enter().append("g")
+        .attr("class","innerleaves")    
+        .style("fill", "#07573a") 
+        .html(getInner)
+        .attr("transform",(d,i,j)=>{
+            // console.log(d);
+            // return "scale(-1,1)";
+            // return "scale(" + scaleFactor(d.durationInSeconds)+ ")"
+            let scaleF = scaleFactor(d.durationInSeconds);
+            // console.log(d.durationInSeconds,scaleF)
+            let parentIndex= Array.prototype.indexOf.call(d3.select(j[i]).node().parentNode.parentNode.children, d3.select(j[i]).node().parentNode);
+            let x,y,rotateFactor,flipX;
+            if (parentIndex != transformedData.length-1){
+                if (parentIndex%2 == 0){
+                    x=((i+1)* 75);
+                    let xSqrt = Math.sqrt(x);
+                    // console.log(xSqrt);
+                    if (parentIndex!=0){
+                        y=(10*parentIndex)*xSqrt;
+                        rotateFactor = 10+5*parentIndex;
+                    }
+                    else{
+                        // y=10*xSqrt-3;
+                        y= (i%2==0) ? 10*xSqrt+2:10*xSqrt-2; 
+                        rotateFactor= (i%2==0) ? -10:45; 
+                    }
+                    scaleF = (i%2==0) ? -scaleF : scaleF; 
+                    // flipX = (i%2==0) ? '' : "scale(1,-1)"; 
+                    // console.log(x,y,rotateFactor,"evenodd",scaleF);
+                }
+                else{
+                    x=-((i+1)* 75);
+                    // console.log(x)
+                    let xSqrt = Math.sqrt(Math.abs(x));
+                    if (parentIndex!=1){
+                        y=(10*(parentIndex-1))*xSqrt;
+                        rotateFactor = -10-5*parentIndex;
+                    }
+                    else{
+                        y= (i%2==0) ? 10*xSqrt+2:10*xSqrt-2; 
+                        rotateFactor= (i%2==0) ? 10:-45; 
+                    }
+                    scaleF = (i%2==0) ?-scaleF:scaleF; 
+                    // flipX = (i%2==0) ? "" : "scale(1,-1)"; 
+                    // console.log(x,y,rotateFactor,"evenodd",scaleF);
+                }
+            }
+            else{
+                x=0;
+                y=600+i*100;
+                rotateFactor= (i%2==0) ? -70:70; 
+                scaleF = (i%2==0) ? -scaleF : scaleF; 
+            }
+            return "translate(" +  x + "," + y + ")" + " scale("+scaleF+") rotate("+rotateFactor+")"
+
+        })
+        
+    ; 
 }
 d3.json("data.json").then(gotData);

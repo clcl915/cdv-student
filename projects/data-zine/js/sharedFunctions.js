@@ -1,26 +1,70 @@
-// let width = document.querySelector("#vizContainer").clientWidth;
-// let height = document.querySelector("#vizContainer").clientHeight;
-// let infobutton=document.querySelector("#infoButton");
-// document.querySelector("#infoContent").style.display='none';
-// infobutton.addEventListener('click',()=>{
-//     console.log('yes')
-//     document.querySelector("#infoContent").style.display=((document.querySelector("#infoContent").style.display == 'none') ? 'flex' : 'none')
-// })
-let width = 1000;
-let height = 800;
-let viz = d3.select("#vizContainer")
-                .append("svg")
-                    .attr("id", "viz")
-                    .attr("width", width)
-                    .attr("height", height)
-;
-function getText(d,i){
-    if (d.notes != "n/a"){
-        notes = d.notes;
+function getPath(d,i){
+    let leafPath ="";
+    switch (d.withWhom){
+        case "Staff worker":
+            // oval
+            // leafPath = "M0,0 C-15,-1 -15,-49 0,-50 C15,-49 15,-1 0,0"
+            
+            leafPath = "M1.69,0V-11.91A10.83,10.83,0,0,0,5.6-11c6.4-.42,8.83-3.73,9.19-8.55.12-.95-9.38.45-9.37-.15s9.38-4.72,9.2-5.74a27,27,0,0,0-1.32-4.75c-.2-.55-7.77,3.94-8,3.37C5-27.59,12-33.41,11.55-34.19A53.48,53.48,0,0,0,8.81-39c-.3-.48-6.14,5.56-6.47,5.07S7-41.72,6.52-42.38C4.77-44.83,2.72-47.44.3-50.25l-.22-.26-.23.26C-2-48.11-3.63-46.07-5.08-44.14c-.36.48,3.1,6.54,2.76,7s-4.48-4.64-4.79-4.18A61,61,0,0,0-11-34.93c-.32.61,7.6,7.66,7.33,8.25-.42.88-9-4.72-9.33-3.89a22.35,22.35,0,0,0-1.62,11c0,.53,10.71-.08,10.68.45S-14.21-17-14-16.52c1.09,3.13,3.66,5.18,8.6,5.5a10.83,10.83,0,0,0,3.91-.89V0H2.28"
+            break;
+        case "Security Guard":
+            // triangle
+            // leafPath = "M -20,-50 0,0 20,-50 z"
+            leafPath = "M9.88-26.79c2.35-.59,6.44-2.69,11-2.35.42,13.4-6.29,19.65-18.88,20V0H-1.76V-9.14c-7.92.08-21-3.38-19-19.92,3-.56,7.66,2,10.53,2.25A49.21,49.21,0,0,1,0-49.46C5.25-43.24,9.62-34.24,9.88-26.79Z"
+            break;
+        case "Delivery Driver":
+            // leafPath = "M21.63-25.3,18.76-20l-3.39,7.84L.5-10.7V-42.61l10.33-1.88a7.56,7.56,0,0,0,4.5-2.64l.88-1.06a8,8,0,0,0,1-1.53l2.48-5.15-.9-.43-2.48,5.14a6.55,6.55,0,0,1-.85,1.33l-.88,1.06a6.55,6.55,0,0,1-3.91,2.3L.5-43.63V-65.76h-1V-54l-6.32-4-1.11-3.34-1,.32,1.23,3.67L-.5-52.84v33.13l-11.1-1.43-4.66-8-2.41-6.36-.94.36,2.45,6.43,4.94,8.54L-.5-18.7V0h1V-9.7l15.55-1.52,3.61-8.34,2.85-5.26Z"
+            // leafPath = "M.51,0c-13.23,0-16.77-20.74-19.7-43.8L0-34l19.19-9.8C16.9-20.33,15.39-.12.51,0Z"
+            leafPath = "M1.74,0h-2l.09-9.36c-4.06.06-16.06-13.27-14.43-18.21.38-1.16,5.47,4.2,5.82,3.79.81-1-3.65-11.26-2.57-11.37.64-.64,3.33,3.3,4,2.94s-.86-8.08,0-9,2.93,2.6,3.6,2.68c1.57.18,2-10,3.85-12.11l.23-.25.23.25c1.74,1,3.85,10.21,4.22,13.45.09.8,2.39-3.59,3.06-3.24.94.5-.19,8.16.09,8.2,1.76.25,3-4.33,4-2.89,1.28,2-3.25,10.89-1.87,11,.62.06,3.65-4,4.49-2.8C17.08-23,3.78-8.74,1.71-9.34Z"
+            break;
+        case "Receptionist":
+            // leafPath= "M-.72-15.13V0h2l.09-15C11.4-22.21,8.1-37.77.51-37.77S-12.48-24-.59-14.91"
+            leafPath = "M-4.78-49.53c-2.83,1.41-.38,10,2.84,18,.19.42-.22.5-.49.36-3.24-1.6-9.3-12.65-11.17-7.75C-15.86-33-1.25-27.76-1.75-26.39c.07.93.73,8.82.75,9.75-.22.87-4.81-10.39-8.5-8.09C-12.95-22.59-.09-9.56-.71-9.49V.18L1.41.2l.07-8.73C1-8.35,18.55-19,12.21-24c-3-1.51-10.63,9.89-10.63,9.89,0-.47.29-12.74.29-12.74C4-28.62,16.49-39.9,9.06-43.41c-5.15-2.44-5.89,8.37-7.43,12a.26.26,0,0,1-.5-.12C1.42-42.83-.8-50.92-4.78-49.53Z"
+            break;
+        case "Random Person":
+            leafPath="M-1-.31H.18C.59-6.91,1.66-14.16,5.5-17.39c4.79-4.71,13.29-5.16,13.44-9.22,0-1.46-.79-2.21-1.54-3.35C16-32,8.6-38,6.25-38a1.11,1.11,0,0,0-.5.12c-1.86.91-4.34,3.53-4.56,6-.48,5.3-2.13,3.3-2.4-.29-.18-2.38-1.17-5.18-2.78-6A1.2,1.2,0,0,0-5.12-38c-2.43,1.43-10.83,3.14-13.34,7.21a4.24,4.24,0,0,0,0,4.4A37.63,37.63,0,0,0-6.66-16.31c4.93,2.56,4.54,12.25,4.54,16Z"
+            break;
+        case "Driver":
+            // default leaf path 
+            // leafPath = "M0,0 C-20,-10 -20,-40 0,-50 C20,-40 20,-10 0,0"
+            leafPath = "M1.61,0V-11.91A10.89,10.89,0,0,0,5.52-11c6.41-.42,8.84-3.73,9.19-8.55C15.64-26.67,12.47-36,.23-50.25L0-50.51l-.23.26C-12.47-36-15.64-26.67-14.71-19.57c.35,4.82,2.78,8.13,9.19,8.55a10.89,10.89,0,0,0,3.91-.89V0H2.2"
+            break;
     }
-    return "<tspan x='0' dy='1.2em'>" + d.durationInSeconds + "s </tspan>" + "<tspan x='0' dy='1.2em'>" +d.withWhom + "</tspan>"+ "<tspan x='0' dy='1.2em'>" +notes+ "</tspan>";
+    return leafPath;
 }
-
+function getColor(d,i){
+    let color="";
+    switch (d.typeOfInteraction){
+        case "Purchase":
+            color = "#55cbcd";
+            break;
+        case "Deliveries":
+            color="#ff968a";
+            break;
+        case "Health Code":
+            color="#b6cfb6";
+            break;
+        case "I needed something":
+            color="#f3b0c3";
+            break;
+        case "Security Check":
+            color="#fbe551";
+            break;
+        case "Hand outs":
+            color="#cbaacb";
+            break;
+        case "They needed something":
+            color="#ffc8a2";
+            break;
+        case "Directions":
+            color="#adb5be";
+            break;
+        case "Confirmation":
+            color="#b1907f";
+            break;
+    }
+    return color;
+}
 function getInner(d,i){
     let inner='';
     switch (d.reaction){
@@ -83,82 +127,3 @@ function getInner(d,i){
     return inner
     
 }
-
-function gotData(incomingData){
-    console.log("the incoming data is:" , incomingData)
-    //Grouping
-    let datagroups = viz.selectAll(".dataGroup").data(incomingData).enter().append("g")
-                                                        .attr("class","dataGroup")
-                                                        .attr("width", 50)
-                                                        .attr("height",50)
-                                                        .on('mouseover', function (d, i) {
-                                                            d3.select(this).selectAll('#context').style("opacity",1)
-                                                        })
-                                                        .on('mouseout', function (d, i) {
-                                                            d3.select(this).selectAll('#context').style("opacity",0)
-                                                        })
-    ;
-    let maxDuration = d3.max(incomingData, (d,i)=>{return d.durationInSeconds;}); 
-    let scaleFactor = d3.scaleLinear().domain([0,maxDuration]).range([0.5,1.8]);
-
-    let leaf = datagroups.append("g")
-                .attr("class","leafSVG")
-                // .html(texture)
-                .attr("alignment-baseline","baseline")
-                .attr("x",0)
-                .attr("y",0)
-                .style("display","block")
-                .style("margin","auto")
-                .attr("transform",(d,i)=>{
-                    return "scale(" + scaleFactor(d.durationInSeconds)+ ")"
-                })
-                .attr("fill",getColor)
-                    .append("path")
-                    .attr("d",getPath)
-                    .attr("opacity",0.7)
-    ;
-    let innerleaf = datagroups.append("g")
-                // .append("path")
-                // // .attr("fill","gray")
-                .attr("transform",(d,i)=>{
-                    return "scale(" + scaleFactor(d.durationInSeconds)+ ")"
-                })
-                // .attr("d",getInner)
-                // .style("stroke-width","5")
-                // .style("fill", "#5e5e5e") 
-                .style("fill", "#07573a") 
-                .html(getInner)
-    ;            
-
-    let clip = datagroups.append("defs").append("clipPath")
-        .attr("id", "clip")
-        .append("path").attr("d",getPath)
-    ;
-    innerleaf.attr("clip-path", "url(#clip)");
-    let context = datagroups.append("text")
-        .html(getText)
-        .attr("id", "context")
-        .attr("x",0)
-        .attr("width",20)
-        .attr("fill","white")
-        .style("text-wrap","wrap")
-        .attr("font-size","xx-small")
-        .attr("y",10)
-        .style("opacity",0)
-        .attr("text-anchor", "middle")
-        .attr("dominant-baseline", "central") 
-    ;
-
-    datagroups.attr("transform",(d,i)=>{
-        let x=(i%10 * 100)+ 50;
-        let y=(Math.floor(i/10)*105)+90;
-        return "translate(" + x + "," + y + ")"
-    });
-
-}
-
-
-d3.json("data.json").then(gotData);
-// export {getColor, getPath };
-// let texture = `<path class="cls-1" d="M21.63-25.3,18.76-20l-3.39,7.84L.5-10.7V-42.61l10.33-1.88a7.56,7.56,0,0,0,4.5-2.64l.88-1.06a8,8,0,0,0,1-1.53l2.48-5.15-.9-.43-2.48,5.14a6.55,6.55,0,0,1-.85,1.33l-.88,1.06a6.55,6.55,0,0,1-3.91,2.3L.5-43.63V-65.76h-1V-54l-6.32-4-1.11-3.34-1,.32,1.23,3.67L-.5-52.84v33.13l-11.1-1.43-4.66-8-2.41-6.36-.94.36,2.45,6.43,4.94,8.54L-.5-18.7V0h1V-9.7l15.55-1.52,3.61-8.34,2.85-5.26Z" transform="translate(19.61 65.76)"/>
-// <path class="cls-1" d="M7.41-32.88S4-28.43,8.6-29.77,13.19-36,13.19-36Z" transform="translate(19.61 65.76)"/>`
