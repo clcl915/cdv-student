@@ -231,7 +231,7 @@ function gotData(incomingData){
         .attr("fill","white")
         .attr("x",0)
         .attr("y",0)
-        .attr("transform","translate("+0+","+ h/2.5+")"+ "scale(20) rotate(15)")
+        .attr("transform","translate("+-30+","+ h/2.5+")"+ "scale(20) rotate(15)")
         .attr("opacity","0.05")
         ;  
         let keyText = key.append("g")
