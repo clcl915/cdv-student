@@ -239,10 +239,11 @@ function gotData(incomingData){
                 .attr("transform","translate("+100+","+ -230+")")
         ;
         keyText.append("text")
-            .text("KEY")
-            .attr("fill","white")
+            .text("HOW TO READ")
+            .attr("fill","#b6cfb6")
             .style("text-wrap","wrap")
-            .attr("font-size","small")
+            .attr("font-size","medium")
+            .style("text-decoration","underline")
             .attr("transform","translate("+-60+","+ 0+")")
             .style("opacity",1)
             .attr("text-anchor", "middle")
@@ -273,6 +274,8 @@ function gotData(incomingData){
                             .attr("x",(d,i)=>{
                                 return i*50
                             })
+                            .attr("fill","#b6cfb6")
+                            // .attr("opacity",0.6)
                             .attr("text-anchor", "middle")
                             .each(function(d) {
                                 var arr = d.type.split(" ");
@@ -310,6 +313,8 @@ function gotData(incomingData){
                     .attr("x",0)
                     .attr("text-anchor", "middle")
                     .attr("font-size","x-small")
+                    .attr("fill","#b6cfb6")
+                    // .attr("opacity",0.6)
                     .text((d,i)=>{
                         return d.who
                     })
@@ -321,7 +326,7 @@ function gotData(incomingData){
         ;
         let eachInner= keyinners.selectAll(".keyinners").data(keyInners).enter().append("g")
                 .attr("transform",(d,i)=>{
-                    return "translate("+i*70+","+ 0+")"
+                    return "translate("+i*58+","+ 0+")"
                 })
         ;
         eachInner.append("g")
@@ -336,6 +341,8 @@ function gotData(incomingData){
                     .attr("x",0)
                     .attr("text-anchor", "middle")
                     .attr("font-size","x-small")
+                    .attr("fill","#b6cfb6")
+                    // .attr("opacity",0.6)
                     .text((d,i)=>{
                         return d.reaction
                     })
@@ -347,6 +354,8 @@ function gotData(incomingData){
                         .text("size of leaf = duration of interaction in seconds")
                         .attr("text-anchor", "middle")
                         .attr("font-size","x-small")
+                        .attr("fill","#b6cfb6")
+                        // .attr("opacity",0.6)
 ;            
 ;
 
@@ -451,7 +460,7 @@ let keyInners = [
         path:`<path class="cls-1" d="M18.21-47.07l-.72-.71a.3.3,0,0,0-.41,0L1.33-32a.3.3,0,0,1-.51-.2V-50.12a.29.29,0,0,0-.29-.29h-1a.29.29,0,0,0-.29.29v17.89a.29.29,0,0,1-.5.2l-15.81-15.8a.28.28,0,0,0-.41,0l-.72.71a.31.31,0,0,0,0,.42l16.9,16.89a.29.29,0,0,1,0,.42L-18.15-12.55a.29.29,0,0,0,0,.42l.71.71a.28.28,0,0,0,.41,0L-1.27-27.17a.29.29,0,0,1,.5.21V-.29A.29.29,0,0,0-.48,0h1A.29.29,0,0,0,.82-.29V-27a.3.3,0,0,1,.51-.21L17-11.47a.3.3,0,0,0,.41,0l.71-.72a.28.28,0,0,0,0-.41L1.36-29.39a.31.31,0,0,1,0-.42L18.21-46.65A.31.31,0,0,0,18.21-47.07Z"/>`
     },    
     {
-        reaction: "Feeling thankful",
+        reaction: "Felt thankful",
         path:`<path class="cls-1" d="M-1.07-1.17v-58a1.08,1.08,0,1,1,2.14,0v58A1.07,1.07,0,1,1-1.07-1.17Z"/>`
     },
     {
@@ -466,5 +475,9 @@ let keyInners = [
     {
         reaction: "Annoyed",
         path:`  <path class="cls-1" d="M11.73-58.91a1,1,0,0,0-1.24.88L1-11.53V-59.19a1.1,1.1,0,0,0-1-1.17,1.1,1.1,0,0,0-1,1.17v47.66L-10.49-58a1,1,0,0,0-1.24-.88,1.18,1.18,0,0,0-.77,1.41L-1.91-9.6-.33-.81H.29l1.6-8.74L12.5-57.5A1.18,1.18,0,0,0,11.73-58.91Z"/>`
+    },
+    {
+        reaction: "Errrrrrr",
+        path:` <circle cx=10 cy=-25 r=10>` 
     }
 ];
