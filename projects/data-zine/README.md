@@ -38,12 +38,14 @@ I chose to have two visualizations for this project. For the middlespread, I wan
 To visualize the branches, I used the square root equation y=x^0.5 to make this kind of outward branch. 
 
 y=x^0.5
-![](assets/squareroot-curve.png)
+<p align="center">
+<img src="assets/squareroot-curve.png"/></p>
 
 Then I make the curves symmetrical, I changed the equation to be the square root of the absolute value of x. 
 
 y=|x|^0.5
-![](assets/sqrt-of-absolute-x.png)
+<p align="center">
+<img src="assets/sqrt-of-absolute-x.png"/></p>
 
 Then I was able to manipulate the curves by multiplying by a factor of a. 
 y=a|x|^0.5
