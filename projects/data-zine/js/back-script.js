@@ -18,6 +18,9 @@ function getText(d,i){
     if (d.notes != "n/a"){
         notes = d.notes;
     }
+    else{
+        notes = "n/a";
+    }
     return "<tspan x='0' dy='1.2em'>" + d.durationInSeconds + "s </tspan>" + "<tspan x='0' dy='1.2em'>" +d.withWhom + "</tspan>"+ "<tspan x='0' dy='1.2em'>" +notes+ "</tspan>";
 }
 
