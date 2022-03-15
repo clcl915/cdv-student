@@ -48,6 +48,7 @@ y=|x|^0.5
 <img src="assets/sqrt-of-absolute-x.png"/></p>
 
 Then I was able to manipulate the curves by multiplying by a factor of a. 
+
 y=a|x|^0.5
 
 ![](assets/middlespread-just-branches.jpg)
@@ -72,4 +73,4 @@ I also had some trouble with finding a suitable color palette. I originally pick
 
 Surprisingly after visiting a lot inspiration jsfiddles, the graphing along the square root curve process was pretty smooth.    
 
-If this wasn’t on print, I would have loved to add in some animation and include the notes that I recorded. As of right now, the current version with no interaction is the version for print. But as a little addition or maybe as a little easter egg, the back page has some additional notes when the user hovers over.   
+If this wasn’t on print, I would have loved to add in some animation and include the notes that I recorded. As of right now, the current version with no interaction is the version for print. But as a little addition or maybe as a little easter egg, the [back page](https://clcl915.github.io/cdv-student/projects/data-zine/back.html) has some additional notes when the user hovers over. 
