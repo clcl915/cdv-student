@@ -14,6 +14,8 @@ Because there are so many generations and so many Pokemon, I would imagine to ha
 
 ### [Emoji Diet Nutritional Data](https://www.kaggle.com/datasets/ofrancisco/emoji-diet-nutritional-data-sr28)
 
+🍇  🍎  🍓  🥦  🌽  🥔  🥑  🍍  🧄
+
 This dataset is interesting because I find myself searching for food nutritional benefits quite often. I always feel like my bones need some helping. I think this Emoji Diet dataset would be cool to visualization and understand what exactly you are consuming and the health benefits. 
 
 For visualization, I'm not quite sure what would look nice to visualize calories, carbs, total sugar, sodium, vitamin d, etc. 
@@ -21,7 +23,7 @@ For visualization, I'm not quite sure what would look nice to visualize calories
  + maybe a vertical bar chart to show which has the most calories per gram. 
 
 
-### [Sephora Foundation Shades](https://github.com/the-pudding/data/tree/master/foundation-names)
+### [Sephora ~~Foundation~~ Lipstick Shades](https://github.com/the-pudding/data/tree/master/foundation-names)
 
 These datasets were used for The Pudding essay The Naked Truth article, where data was scraped from sites like Sephora and Ulta. I think it would be cool to scrape lipstick shades from cosmetic e-commerce sites to make a search for a particular shade. Because nowadays, you can find a lipstick in any shade. 
 
