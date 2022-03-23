@@ -97,9 +97,24 @@ function gotData(incomingData){
           .attr("text-anchor", "middle")
           .attr("dominant-baseline", "central") 
   ;
+  
+  let key = viz.append("g").attr("class", "key").attr("transform","translate("+100+","+ 700+")").attr("opacity",0);
+  // key.append("rect").attr("x",-30).attr("y",-60).attr("width",520).attr("height",100).attr("fill","#eee");
 
-
-
+  key.append("text").text("KEY").attr("transform","translate("+0+","+ -25+")").attr("fill","black").attr("font-family","sans-serif");
+  let eachColor = key.selectAll(".colors").data(keyColors).enter().append("g");
+  eachColor.append("circle")
+              .attr("cx",(d,i)=>{
+                return i*100
+              })
+              .attr("class","colors")
+              .attr("y",0)
+              .attr("r",5)
+              .attr("fill",(d,i)=>{
+                return d.color
+            })
+  ;
+  eachColor.append("text").text((d,i)=>{return d.continent}).attr("transform",(d,i)=>{let x=i*100+10; return "translate("+x+","+ 5+")" }).attr("font-family","sans-serif");
 
 
 
@@ -282,3 +297,26 @@ function buildXAndYAxis(xScale, yScale){
 
   ;
 }
+
+let keyColors = [
+  {
+      continent:"Africa",
+      color : "green"
+  },
+  {
+    continent: "Americas",
+      color:"yellow"
+  },
+  {
+    continent: "Asia",
+      color:"red"
+  },    
+  {
+    continent: "Europe",
+      color:"orange"
+  },
+  {
+    continent: "Oceania",
+      color:"blue"
+  }
+  ];
