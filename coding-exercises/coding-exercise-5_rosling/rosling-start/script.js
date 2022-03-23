@@ -77,8 +77,26 @@ function gotData(incomingData){
 
 
 
-
-
+  let header = viz.append("g").attr("class", "header");
+  header.append("text")
+          .text("Fertility and Life Expectancy by Country over Time (1962-2015)")
+          .attr("x",w/2)
+          .attr("y",50)
+          .attr("font-family", "sans-serif")
+          .attr("font-size", "1.25em")
+          .attr("font-weight", "bold")
+          .attr("text-anchor", "middle")
+          .attr("dominant-baseline", "central") 
+  ;
+  header.append("text")
+          .text("recreating Hans Rosling's graph")
+          .attr("x",w/2)
+          .attr("y",75)
+          .attr("font-family", "sans-serif")
+          .attr("font-size", "14px")
+          .attr("text-anchor", "middle")
+          .attr("dominant-baseline", "central") 
+  ;
 
 
 
