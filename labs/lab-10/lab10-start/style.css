@@ -1,0 +1,22 @@
+body{
+  text-align: center;
+  margin-top:30px;
+}
+
+/* .datagroup:hover circle{
+  opacity: 1;
+  fill: rgb(195, 76, 76);
+  transform: scale(2);
+}
+.datagroup circle{
+  transition: transform 100ms;
+}
+.datagroup:hover{
+  cursor: default;
+}
+.datagroup text{
+  visibility: hidden;
+}
+.datagroup:hover text{
+  visibility: visible;
+} */

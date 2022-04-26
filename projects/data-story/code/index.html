@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pokémon</title>
+
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- include the d3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="./">Data Story: Pokémon</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="./">Pokemon PC</a>
+          </li>
+          <li>
+            <a href="journey.html">Pokemon Journey</a>
+          </li>
+          <li>
+            <a href="./">Pokemon with GAN?</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container">
+      <div class="menu">
+        <div class="searchContainer">
+          <input type="text" class="container__input" />
+          <span class="material-icons-round searchIcon">
+            search
+            </span>
+        </div>
+        <p>Filter</p>
+        <div class="sort">
+          <p>Sort</p>
+          <div class="sortingCategories">
+            <p>by color</p>
+            <p>by type</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div id="vizContainer"></div>
+      <div class="vizSample">
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+        <div class="imgHolder">
+          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+        </div>
+      </div>
+    </div>
+
+    <!-- our main script: -->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
