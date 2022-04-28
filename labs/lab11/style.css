@@ -1,0 +1,32 @@
+body{
+  margin:0;
+}
+.fullHeight{
+  background-color: aquamarine;
+  width: 100%;
+  height: 100vh;
+  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.halfHeight{
+  width: 100%;
+  height: 50vh;
+  outline: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+.halfHeight p {
+  background-color: rgb(148, 83, 195);
+  padding:50px;
+  margin-left: 10px;
+}
+#vizContainer{
+  position: sticky; 
+  top: 0px;
+  z-index: -1;
+}
+#wrapper2 p{
+  background-color: forestgreen;
+}
