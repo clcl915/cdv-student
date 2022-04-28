@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pokémon Insights</title>
+
+    <!-- stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/insights.css">
+
+    <!-- include the d3 library -->
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="./">Data Story: Pokémon</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="./">Pokemon PC</a>
+          </li>
+          <li>
+            <a href="journey.html">History</a>
+          </li>
+          <li>
+            <a href="insights.html">Insights</a>
+          </li>
+          <li>
+            <a href="#" id="mlPokemon">ML Generated Pokemon?</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+        <section>
+          <div id="">
+            <h1>Type-Color Outliers</h1>
+            <p>What are the traits of outliers when a Pokémon’s type isn’t the main color for that type?</p>
+            <img src="https://i.pinimg.com/originals/2d/c3/de/2dc3deb94bbc7149b4f100b7b7399609.jpg*" alt="">
+            <img src="pokemon-bubble-type-color.png" alt="">
+          </div>
+          <div id="">
+            <h1>Pokemon Shapes</h1>
+            <p>How often do Pokémon shapes get repeated over generations? Do we have a generation with a lot of bird-like or dog-like shapes?</p>
+            <div class="leakedStarters">
+              <img src="https://assets.vg247.com/current//2018/02/pokemon_gen_8_leak_potential_fire.jpg" alt="">
+              <img src="https://pbs.twimg.com/media/Eb2w9PhUYAAJexX.jpg" alt="">
+            </div>
+          </div>
+      </section>
+    </div>
+ 
+   
+    
+
+    <!-- our main script: -->
+    <script type="text/javascript" src="js/insights.js"></script>
+  </body>
+</html>

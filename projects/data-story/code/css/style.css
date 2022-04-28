@@ -5,7 +5,7 @@ body{
   /* background-color: rgb(44, 167, 243); */
   padding:50px 80px;
   color: #575757;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 /* HEADER */
@@ -77,19 +77,25 @@ body{
 
 .vizSample{
   /* padding: 100px; */
-  background:black;
-  width: 100%;
-  height: 100%;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aee28f7c-d3b8-433a-8458-31c42534284b/d6cqoqc-412c8296-9145-4639-b6b7-b92888f20983.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FlZTI4ZjdjLWQzYjgtNDMzYS04NDU4LTMxYzQyNTM0Mjg0YlwvZDZjcW9xYy00MTJjODI5Ni05MTQ1LTQ2MzktYjZiNy1iOTI4ODhmMjA5ODMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aPKL00bIVrYRyBmVWiodmw-XLc4RhIB9QpTTXopIC2c");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  width: 90%;
+  height: 90%;
+  padding: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,.7);
 }
 .vizSample img{
   width:100%;
-  padding: 10px;
+  padding: 5px;
   height: 100%;
+  margin: auto;
 }
 .sort{
   position: relative;
@@ -97,14 +103,14 @@ body{
 }
 .sortingCategories{
   display: none;
-  left: 0;
+  right: -10px;
   padding-top: 4px;
   position: absolute;
   top: 100%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
   z-index: 9999;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 60px;
   padding:10px;
   border:0.5px solid #575757a1;
 
@@ -112,4 +118,20 @@ body{
 
 .sort:hover .sortingCategories {
   display: block;
+}
+.notice{
+  position: absolute;
+  width: fit-content;
+  right: 75px;
+  font-size: small;
+  z-index: -1;
+  text-align: right;
+  color: #7d7d7d;
+  transform: translateY(-30px);
+  transition: cubic-bezier(.19,1,.22,1) 1s;
+  opacity: 0;
+}
+.noticeActive{
+  transform: translateY(-8px);
+  opacity: 1;
 }

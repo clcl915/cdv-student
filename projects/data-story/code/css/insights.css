@@ -32,41 +32,6 @@
     margin-left: 40px;
     transition: none;
   }
-  
-#content{
-    margin: 15px 50px 0 50px;
-    /* height: 100vh; */
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width:80vw;
-    margin: auto;
-}
-.leftContainer{
-    width: 45%;
-}
-.rightContainer{
-    width: 55%;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-.rightContainer img{
-    width: 75%;
-    height: 75%;
-}
-section{
-  width:100vw;
-  height: 100vh;
-  display:flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  text-align: start;
-}
-
 .notice{
   position: absolute;
   width: fit-content;
@@ -82,4 +47,24 @@ section{
 .noticeActive{
   transform: translateY(0px);
   opacity: 1;
+}
+.container{
+  width: 90%;
+  height: 90%;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+.leakedStarters{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.leakedStarters img{
+  width: 50%;
 }

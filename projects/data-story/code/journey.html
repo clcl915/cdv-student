@@ -7,11 +7,16 @@
     <title>Pokémon Journey</title>
 
     <!-- stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     rel="stylesheet">
     <link rel="stylesheet" href="css/journey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- include the d3 library -->
+    
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
   </head>
@@ -24,53 +29,59 @@
             <a href="./">Pokemon PC</a>
           </li>
           <li>
-            <a href="journey.html">Pokemon Journey</a>
+            <a href="journey.html">History</a>
           </li>
           <li>
-            <a href="./">Pokemon with GAN?</a>
+            <a href="insights.html">Insights</a>
+          </li>
+          <li>
+            <a href="#" id="mlPokemon">ML Generated Pokemon?</a>
           </li>
         </ul>
       </nav>
     </header>
-    <section>
-      <div id="container">
-        <div class="leftContainer">
-          <h1>Journey across 8 generations</h1>
-          <p>Some introduction here about Pokemon</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="container" id="fullpage">
+      <section class="section s1">
+        <div id="content">
+          <div class="leftContainer">
+            <h1>Journey across 8 generations</h1>
+            <p>Some introduction here about Pokemon</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="rightContainer">
+            <img src="https://www.pngall.com/wp-content/uploads/5/Pikachu-PNG-Image-File.png" alt="pokemon1">
+          </div>
         </div>
-        <div class="rightContainer">
-          <img src="https://www.serebii.net/swordshield/pokemon/small/001.png" alt="pokemon1">
+      </section>
+      <section class="section s2">
+        <div id="content">
+          <div class="leftContainer">
+            <h1>The Start</h1>
+            <p>Introduce Pokemon Red</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="rightContainer">
+            <img src="https://x9z8w3d5.rocketcdn.me/wp-content/uploads/2020/06/Generation-1-Pokemon-Starter-1024x512.jpg" alt="pokemon1">
+          </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div id="container">
-        <div class="leftContainer">
-          <h1>The Start</h1>
-          <p>Introduce Pokemon Red</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section class="section s3">
+        <div id="content">
+          <div class="leftContainer">
+            <h1>The Peak</h1>
+            <p>Introduce Pokemon's success</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="rightContainer">
+            <img src="https://www.ggrecon.com/media/hjpepghq/pokemon-scarlet-and-violet-pokedex-starters.jpg?mode=crop&width=682&quality=80&format=webp">
+          </div>
         </div>
-        <div class="rightContainer">
-          <img src="https://www.serebii.net/swordshield/pokemon/small/002.png" alt="pokemon1">
-        </div>
-      </div>
-    </section>
-    <section>
-      <div id="container">
-        <div class="leftContainer">
-          <h1>The Peak</h1>
-          <p>Introduce Pokemon's success</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="rightContainer">
-          <img src="https://www.serebii.net/swordshield/pokemon/small/003.png" alt="pokemon1">
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
     
 
     <!-- our main script: -->
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/journey.js"></script>
   </body>
 </html>

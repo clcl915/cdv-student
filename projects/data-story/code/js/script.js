@@ -16,40 +16,16 @@ searchIcon.addEventListener("click", ()=>{
   }
 })
 
-// let viz = d3
-//   .select("#vizContainer")
-//   .append("svg")
-//   .style("width", w)
-//   .style("height", h)
-//   .style("background-color", "lavender")
-// ;
-// function gotData(incomingData){
-//   console.log("the incoming data is:" , incomingData)
+document.querySelector("#mlPokemon").addEventListener('click',show);
+let notice = document.createElement('p');
+notice.innerHTML = "Maybe will remove. Check back later :)";
+notice.classList.add('notice');
+document.querySelector("#mlPokemon").appendChild(notice);
 
-//  let branchContainer =  viz.append("g");
-//   ;
-//   branchContainer.selectAll(".dataGroup").data(d3.range(6)).enter().append("g")
-//           .attr("class","dataGroup")
-//           .attr("transform", (d,i)=>{
-//               let x=((i+1)* 100);
-//               let y=100;
-
-//               return "translate(" +  x + "," + y + ")"
-//           })
-//           .attr("stroke-width","1")
-//           .attr("stroke","white")
-//           .attr("fill","white")
-//           .append("rect")
-//           .attr("x",0)
-//           .attr("y",0)
-//           .attr("width",40)
-//           .attr("height",40)
-
-//   ;
-//   let title = viz.append("g")
-//                   .attr("class","title")
-//                   .attr("fill","white")
-//   ;
-// }
-
-d3.json("data.json").then(gotData);
+function show(){
+  navigator.clipboard.writeText("cl4750@nyu.edu");
+  document.querySelector(".notice").classList.add('noticeActive');
+  setTimeout(()=>{
+    document.querySelector(".notice").classList.remove('noticeActive');
+  },1500);
+}
