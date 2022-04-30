@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafes I've been to in Shanghai</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
-
   </head>
   <body>
     <div id="container">
-      <div>
-        <h2>Cafes I've been to in Shanghai</h2>
-      <div id="vizContainer"></div>
+      <div id="contentText">
+        <h3 id="back">
+          <span class="material-icons-round" style="font-size:10px">
+            keyboard_backspace
+            </span>
+            CINDYGLI.COM
+        </h3>
+        <h1>Cafes I've been to in Shanghai</h2>
+        <p>I've visted quite a number of cafes in Shanghai. Usually I'd go to one to study, work, or hang out with friends. I've spent hours on 大众点评 searching for big ones to study at. So I made this visualization to help me categorize them.</p>
+        <p>made with vanilla js and d3</p>
+        <div id="howToRead">
+          <h3 onclick="showKey()"><u>how to read</u></h3>
+          <div id="key">
+            <div id="keyItem">
+              <p>SIZE OF CAFE --> SIZE OF BEAN</p>
+              <div class="keyBeanSize"></div>
+            </div>
+            <div id="keyItem">
+              <p>LOCATED IN WHICH DISTRICT --> BEAN ROAST</p>
+              <div class="keyBeanColor"></div>
+            </div>
+            <div id="keyItem">
+              <p>
+                GOOD SEATS FOR WORKING?--> AROMA WAVES
+              </p>
+              <div class="keyBeanAroma"></div>
+            </div>
+            <div id="keyItem">
+              <p>ANYTHING SPECIAL? -> TOP-RIGHT SYMBOLS</p>
+              <div class="keyBeanSpecials">
+                <div>
+                  <p>*</p>
+                  <p>Dough</p>
+                </div>
+                <div>
+                  <p>#</p>
+                  <p>Cakes</p>
+                </div>
+                <div>
+                  <p>o</p>
+                  <p>BAGELS!</p>
+                </div>
+                <div>
+                  <p>+</p>
+                  <p>Animals!</p>
+                </div>
+                <div>
+                  <p>!</p>
+                  <p>Paw</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
-      <div id="howToRead">
-        <h3><u>how to read</u></h3>
-        <div><p>size of cafe (tiny,smol,med,lg)-> size of coffee bean</p></div>
-        <div>
-          <p>Located in which district --> bean roast</p>
-          <small
-            ><ul>
-              <li>Channing -> beige</li>
-              <li>Huangpu -> earth yellow</li>
-              <li>Jingan -> dark orange</li>
-              <li>Pudong-> red brown</li>
-              <li>Putuo -> gray</li>
-              <li>Xuhui -> brown</li>
-            </ul></small
-          >
-        </div>
-        <div><p>good seats for working? (no,meh,yes) --> aroma waves (none, 1, 2)</p></div>
-        <div>
-          <p>anything special? -> right symbols</p>
-          <small
-            ><ul>
-              <li>Dough -> *</li>
-              <li>Cakes -> #</li>
-              <li>BAGELS! -> o</li>
-              <li>Animals -> +</li>
-              <li>Paw -> !</li>
-            </ul></small
-          >
-        </div>
+
+      <div id="visualization">
+        <div id="vizContainer"></div>
       </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
