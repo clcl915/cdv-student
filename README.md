@@ -29,6 +29,7 @@ mainly using javascript + d3
 [coding exercise 8 - China Travels](coding-exercises/coding-exercise-8_maps)
 
 <p align="center"><img src="coding-exercises/coding-exercise-8_maps/maps/china-travels.png"></p>
+
 #### Projects
 
 [data zine - interactions with strangers i don't know](projects/data-zine/index.html)
