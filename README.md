@@ -19,23 +19,23 @@ mainly using javascript + d3
 
 [coding exercise 4 - Shanghai Cafes](coding-exercises/coding-exercise-4_grouping)
 
-<p align="center"><img src="coding-exercises/coding-exercise-4_grouping/assets/Cafes_I've_been _to_in_Shanghai.png"></p>
+<p align="center"><img width="80%" src="coding-exercises/coding-exercise-4_grouping/assets/Cafes_I've_been _to_in_Shanghai.png"></p>
 
 
 [coding exercise 5 - Rosling Recreation](coding-exercises/coding-exercise-5_rosling)
-<p align="center"><img src="coding-exercises/coding-exercise-5_rosling/rosling-start/assets/rosling-graph.png"></p>
+<p align="center"><img width="80%" src="coding-exercises/coding-exercise-5_rosling/rosling-start/assets/rosling-graph.png"></p>
 
 
 [coding exercise 8 - China Travels](coding-exercises/coding-exercise-8_maps)
 
-<p align="center"><img src="coding-exercises/coding-exercise-8_maps/maps/china-travels.png"></p>
+<p align="center"><img width="80%" src="coding-exercises/coding-exercise-8_maps/maps/china-travels.png"></p>
 
 #### Projects
 
 [data zine - interactions with strangers i don't know](projects/data-zine/index.html)
 
 <p align="center">
-<img src="projects/data-zine/assets/front.jpg">
+<img width="80%" src="projects/data-zine/assets/front.jpg">
 </p>
 
 [data story - WORK IN PROGRESS 🚧](projects/data-story/code/index.html)
